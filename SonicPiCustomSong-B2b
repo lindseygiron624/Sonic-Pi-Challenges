@@ -1,1 +1,55 @@
+# Lindsey Giron's Custom Song - B2b
 
+# define samples
+bwow_2 = "C:/Users/lindsey_giron/Downloads/b2b_bwow_main.wav"
+bwow_main = "C:/Users/lindsey_giron/Downloads/b2b_bwow1.wav"
+start = "C:/Users/lindsey_giron/Downloads/b2b_start.wav"
+clap = "C:/Users/lindsey_giron/Downloads/clap.wav"
+
+# define functions
+print sample_duration "C:/Users/lindsey_giron/Downloads/b2b_bwow1.wav"
+
+# loops !!!!
+
+use_bpm 116
+# starting note
+sample start
+sleep 1.1
+
+# main
+live_loop :bwow do
+  4.times do
+    sample bwow_main
+    sleep sample_duration bwow_main
+    sample bwow_main
+    sleep sample_duration bwow_main
+    sample bwow_main
+    sleep sample_duration bwow_main
+    sample bwow_main
+    sleep sample_duration bwow_main
+    sample bwow_main
+    sleep sample_duration bwow_main
+    sample bwow_main
+    sleep 0.2
+  end
+  stop
+end
+
+sleep 16
+
+# claps
+live_loop :kick do
+  sample :drum_heavy_kick
+  sleep 1
+end
+
+#live_loop :clap do
+# sleep 2
+# sample clap
+#end
+
+# vocals
+
+# transition to beat drop
+
+# beat drop
