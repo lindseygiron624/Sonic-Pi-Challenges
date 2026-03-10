@@ -3,7 +3,7 @@ note = 21
 
 use_synth :piano
 
-100.times do
+88.times do
   play note
   note = note + 1
   sleep 0.1
